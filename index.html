@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Мой Сайт</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный блок -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Добро пожаловать на мой сайт</h1>
+            <p>Создано с нуля на HTML, CSS и JavaScript</p>
+            <button class="btn" onclick="showMessage()">Нажми на меня</button>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Мы создаём современные и быстрые сайты с нуля. Индивидуальный подход к каждому клиенту.</p>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Сайт-визитка</h3>
+                    <p>От 10 000 ₸</p>
+                </div>
+                <div class="card">
+                    <h3>Лендинг</h3>
+                    <p>От 25 000 ₸</p>
+                </div>
+                <div class="card">
+                    <h3>Интернет-магазин</h3>
+                    <p>От 50 000 ₸</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" placeholder="Ваш Email" required>
+                <textarea id="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Мой сайт. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+              </html>
